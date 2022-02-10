@@ -1,0 +1,12 @@
+D:\Users\vkovaleva\source\MarsRoverPatterns\CommandsPattern\CommandsPattern\bin\Debug\net5.0\CommandsPattern.deps.json
+D:\Users\vkovaleva\source\MarsRoverPatterns\CommandsPattern\CommandsPattern\bin\Debug\net5.0\CommandsPattern.dll
+D:\Users\vkovaleva\source\MarsRoverPatterns\CommandsPattern\CommandsPattern\bin\Debug\net5.0\ref\CommandsPattern.dll
+D:\Users\vkovaleva\source\MarsRoverPatterns\CommandsPattern\CommandsPattern\bin\Debug\net5.0\CommandsPattern.pdb
+D:\Users\vkovaleva\source\MarsRoverPatterns\CommandsPattern\CommandsPattern\obj\Debug\net5.0\CommandsPattern.csproj.AssemblyReference.cache
+D:\Users\vkovaleva\source\MarsRoverPatterns\CommandsPattern\CommandsPattern\obj\Debug\net5.0\CommandsPattern.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\vkovaleva\source\MarsRoverPatterns\CommandsPattern\CommandsPattern\obj\Debug\net5.0\CommandsPattern.AssemblyInfoInputs.cache
+D:\Users\vkovaleva\source\MarsRoverPatterns\CommandsPattern\CommandsPattern\obj\Debug\net5.0\CommandsPattern.AssemblyInfo.cs
+D:\Users\vkovaleva\source\MarsRoverPatterns\CommandsPattern\CommandsPattern\obj\Debug\net5.0\CommandsPattern.csproj.CoreCompileInputs.cache
+D:\Users\vkovaleva\source\MarsRoverPatterns\CommandsPattern\CommandsPattern\obj\Debug\net5.0\CommandsPattern.dll
+D:\Users\vkovaleva\source\MarsRoverPatterns\CommandsPattern\CommandsPattern\obj\Debug\net5.0\ref\CommandsPattern.dll
+D:\Users\vkovaleva\source\MarsRoverPatterns\CommandsPattern\CommandsPattern\obj\Debug\net5.0\CommandsPattern.pdb
