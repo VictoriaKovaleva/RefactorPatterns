@@ -2,7 +2,7 @@
 
 namespace CommandsPattern
 {
-    public class MoveToEast
+    public class MoveToEast : IMove
     {
         private MarsRover _marsRover;
 
@@ -11,7 +11,7 @@ namespace CommandsPattern
             _marsRover = marsRover;
         }
 
-        public void MoveEast()
+        public void Move()
         {
             _marsRover._obstacleFound = ((IList) _marsRover._obstacles).Contains($"{_marsRover._x + 1}:{_marsRover._y}");
             // check if rover reached plateau limit or found an obstacle

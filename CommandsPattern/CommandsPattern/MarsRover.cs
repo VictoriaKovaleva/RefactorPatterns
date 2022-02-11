@@ -42,16 +42,16 @@ namespace CommandsPattern
                     switch (_direction)
                     {
                         case 'E':
-                            _moveToEast.MoveEast();
+                            _moveToEast.Move();
                             break;
                         case 'S':
-                            _moveToSouth.MoveSouth();
+                            _moveToSouth.Move();
                             break;
                         case 'W':
-                            _moveToWest.MoveWest();
+                            _moveToWest.Move();
                             break;
                         case 'N':
-                            _moveToNorth.MoveNorth();
+                            _moveToNorth.Move();
                             break;
                     }
                 }
