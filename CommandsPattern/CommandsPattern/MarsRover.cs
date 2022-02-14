@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace CommandsPattern
 {
@@ -15,6 +16,7 @@ namespace CommandsPattern
         private readonly MoveToWest _moveToWest;
         private readonly MoveToNorth _moveToNorth;
         private readonly MoveToEast _moveToEast;
+        private Dictionary<char, IMove> moveDirection = new Dictionary<char, IMove>();
 
         public MarsRover(int x, int y, char direction, string[] obstacles)
         {
@@ -22,12 +24,12 @@ namespace CommandsPattern
             _y = y;
             _direction = direction;
             _obstacles = obstacles;
-            _moveToSouth = new MoveToSouth(this);
-            _moveToWest = new MoveToWest(this);
-            _moveToNorth = new MoveToNorth(this);
-            _moveToEast = new MoveToEast(this);
+            moveDirection.Add('E', new MoveToEast(this));
+            moveDirection.Add('N', new MoveToNorth(this));
+            moveDirection.Add('S', new MoveToSouth(this));
+            moveDirection.Add('W', new MoveToWest(this));
         }
-        
+
         public string GetState()
         {
             return !_obstacleFound ? $"{_x}:{_y}:{_direction}" : $"O:{_x}:{_y}:{_direction}";
@@ -39,21 +41,7 @@ namespace CommandsPattern
             {
                 if (command == 'M')
                 {
-                    switch (_direction)
-                    {
-                        case 'E':
-                            _moveToEast.Move();
-                            break;
-                        case 'S':
-                            _moveToSouth.Move();
-                            break;
-                        case 'W':
-                            _moveToWest.Move();
-                            break;
-                        case 'N':
-                            _moveToNorth.Move();
-                            break;
-                    }
+                    moveDirection[_direction].Move();
                 }
                 else if(command == 'L')
                 {
